@@ -13,6 +13,7 @@ number_range = input('Input range input with space:')
 a = number_range.split()
 answer  = randint(int(a[0]), int(a[1]))
 attempt = 0
+number = 0
 while attempt < 2:
     number = int(input('Input number '))
     print('number:', number)
@@ -25,7 +26,7 @@ while attempt < 2:
     elif number > answer:
         print('less')
         attempt += 1
-    number = 0
+
 else:
      print(f'You are the loser! The number is {number}')
 
